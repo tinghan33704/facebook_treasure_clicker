@@ -1,0 +1,35 @@
+﻿{
+    "name": "FacebookTreasureClicker",
+    "version": "1.0",
+    "description": "代替使用者自動點擊FB直播中的獎賞",
+    "permissions": ["http://*.google.com.tw/", "https://*.google.com.tw/", "tabs", "activeTab", "declarativeContent", "storage", "webNavigation"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+        {
+         "matches": ["*://www.facebook.com/*/videos/*"],
+         "run_at": "document_start",
+         "css": [],
+         "js": ["content_script.js"]
+        }
+    ],
+    "options_page": "options.html",
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/FacebookTreasureClicker.png",
+        "32": "images/FacebookTreasureClicker.png",
+        "48": "images/FacebookTreasureClicker.png",
+        "128": "images/FacebookTreasureClicker.png"
+      }
+    },
+    "icons": {
+      "16": "images/FacebookTreasureClicker.png",
+      "32": "images/FacebookTreasureClicker.png",
+      "48": "images/FacebookTreasureClicker.png",
+      "128": "images/FacebookTreasureClicker.png"
+    },
+    "manifest_version": 2
+  }
