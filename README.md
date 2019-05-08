@@ -1,0 +1,2 @@
+# facebook_treasure_clicker
+代替使用者自動點擊FB直播中的獎賞
