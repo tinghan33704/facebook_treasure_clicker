@@ -7,7 +7,7 @@
 ## 使用方法
 1. 右上綠色「Clone or download」，點擊「Download ZIP」下載此工具
 2. 解壓縮該壓縮檔
-3. 於瀏覽器輸入 `chrome://extensions/`
+3. 於瀏覽器輸入 `chrome://extensions/`，將右上角「開發人員模式」開啟
 4. 點擊左上角「載入未封裝項目」，選取剛剛解壓縮的資料夾中的「FacebookTreasureClicker」資料夾
 5. 如果右上角有多一個此工具的小圖示，則代表安裝成功 (擴充功能管理頁面若出現紅色錯誤字樣可不用理會)
 
