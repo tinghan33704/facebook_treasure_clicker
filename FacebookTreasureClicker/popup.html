@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-  <html>
+<html>
     <head>
-      <style>
-      </style>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome.min.css">
+        <script src="font-awesome.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="popup.js"></script>
+        <style>
+            body{
+                font-family:Microsoft JhengHei;
+                overflow-y: visible;
+                font-size: 22px;
+                width: 500px;
+                height: 0px;
+            }
+            img{
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+            }
+            
+            .container-fluid {
+                border: 4px solid red;
+                border-radius: 2px;
+            }
+            
+            .status{
+                color: #FFFFFF;
+                text-align: center;
+                background-color: #FF0000;
+                padding: 5px;
+            }
+            
+            .treasure{
+                margin: 4px;
+            }
+            
+            .no_reward{
+                margin: 6px;
+                color: #999999;
+                text-align: center;
+            }
+            
+            hr{
+                width: 96%;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-      <script src="popup.js"></script>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 status">
+                    <i class="fa fa-times-circle"></i> 關閉中
+                </div>
+                <div class="col-xs-12 treasure">
+                    <div class="col-xs-12 no_reward">尚無獎勵</div>
+                </div>
+            </div>
+        </div>
+        
     </body>
-  </html>
+</html>
