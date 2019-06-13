@@ -4,7 +4,7 @@
 ## 適用環境
 電腦版 Google Chrome 瀏覽器
 
-## 使用方法
+## 安裝及使用方法
 1. 右上綠色「Clone or download」，點擊「Download ZIP」下載此工具
 2. 解壓縮該壓縮檔
 3. 於瀏覽器輸入 `chrome://extensions/`，將右上角「開發人員模式」開啟

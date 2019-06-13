@@ -2,7 +2,7 @@ var interval_id;
 
 function init(){
     chrome.storage.sync.set({status: "ok"}, function() {
-        console.log("[FacebookTreasureClicker] FacebookTreasureClicker start success");
+        console.log("[FacebookTreasureClicker] FacebookTreasureClicker Start Success");
     });
     chrome.storage.sync.set({treasure: []}, function() {});
     chrome.storage.sync.get(['scanFreq'], function(items) {
@@ -75,6 +75,10 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
         chrome.storage.sync.get(['treasure'], function(items) {
             chrome.runtime.sendMessage({action: "showTreasure", data: items.treasure});
         });
+    }
+    else if(msg.action == 'newPage')
+    {
+        init();
     }
 });
 
