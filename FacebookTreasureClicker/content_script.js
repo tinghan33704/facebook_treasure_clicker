@@ -15,6 +15,7 @@ function scanRun(freq)
 {
     interval_id = setInterval(function(){
         checkTreasureExist();
+        checkLivePaused();
     },freq*1000);
 }
 
@@ -38,6 +39,16 @@ function checkTreasureExist(){
         
         close_btn[0].click();
         console.log("[FacebookTreasureClicker] Treasure Panel Closed");
+    }
+}
+
+function checkLivePaused()
+{
+    var pause_btn = document.getElementsByClassName("_1jto _bsl _4ubd _3htz");
+    
+    if(pause_btn.length > 0)
+    {
+        pause_btn[0].click();
     }
 }
 
