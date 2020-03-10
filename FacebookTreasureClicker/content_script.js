@@ -45,11 +45,12 @@ function checkTreasureExist(){
 function checkLivePaused()
 {
     var pause_btn_hide = document.getElementsByClassName("_1jto _bsl _4ubd _3htz hidden_elem");
-    //var pause_btn = document.getElementsByClassName("_1jto _bsl _4ubd _3htz");
+    var pause_btn = document.getElementsByClassName("_1jto _bsl _4ubd _3htz");
     
-    if(pause_btn_hide.length == 0)
+    if(pause_btn_hide.length == 0 && pause_btn.length > 0)
     {
-        pause_btn_hide[0].click();
+        pause_btn[0].click();
+        //console.log('Pause clicked');
     }
 }
 
