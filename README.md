@@ -1,4 +1,4 @@
-# facebook_treasure_clicker (ver. 1.1.2)
+# facebook_treasure_clicker (ver. 1.2.0)
 代替使用者自動點擊 FB 直播中的獎賞
 
 ## 適用環境
