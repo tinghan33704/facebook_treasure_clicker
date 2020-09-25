@@ -25,7 +25,7 @@ function checkTreasureExist(){
     var click_btn = document.getElementsByClassName("oajrlxb2 s1i5eluu gcieejh5 bn081pho humdl8nn izx4hr6d rq0escxv nhd2j8a9 j83agx80 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys d1544ag0 qt6c0cv9 tw6a2znq i1ao9s8h esuyzwwr f1sip0of lzcic4wl l9j0dhe7 abiwlrkh p8dawk7l beltcj47 p86d2i9g aot14ch1 kzx2olss cbu4d94t taijpn5t ni8dbmo4 stjgntxs k4urcfbm qypqp5cg");
     var close_btn = document.getElementsByClassName("oajrlxb2 s1i5eluu gcieejh5 bn081pho humdl8nn izx4hr6d rq0escxv nhd2j8a9 j83agx80 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys d1544ag0 qt6c0cv9 tw6a2znq i1ao9s8h esuyzwwr f1sip0of lzcic4wl l9j0dhe7 abiwlrkh p8dawk7l beltcj47 p86d2i9g aot14ch1 kzx2olss cbu4d94t taijpn5t ni8dbmo4 stjgntxs k4urcfbm qypqp5cg");
     
-    var prize_tag = document.getElementsByClassName("oi732d6d ik7dh3pa d2edcug0 qv66sw1b c1et5uql a8c37x1j s89635nw ew0dbk1b a5q79mjw g1cxx5fr ekzkrbhg oo9gr5id hzawbc8m");
+    var prize_tag = document.getElementsByClassName("d2edcug0 hpfvmrgz qv66sw1b c1et5uql rrkovp55 a8c37x1j keod5gw0 nxhoafnm aigsh9s9 d3f4x2em fe6kdd0r mau55g9w c8b282yb mdeji52x a5q79mjw g1cxx5fr ekzkrbhg oo9gr5id hzawbc8m");
     
     if(click_btn.length > 0 && !treasure_clicked)
     {
@@ -36,7 +36,7 @@ function checkTreasureExist(){
     else if(close_btn.length > 0 && treasure_clicked)
     {
         var time = getClickTime();
-        var prize_str = (typeof prize_tag == "undefined")?"":prize_tag[0].innerHTML;
+        var prize_str = prize_tag.length <= 0 ? "" : prize_tag[0].innerHTML;
         getTreasure(time, prize_str);
         
         close_btn[0].click();

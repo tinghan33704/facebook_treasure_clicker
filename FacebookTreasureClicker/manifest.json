@@ -1,6 +1,6 @@
 ﻿{
     "name": "FacebookTreasureClicker",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "author": "蒼曜(tinghan33704)",
     "description": "代替使用者自動點擊FB直播中的獎賞",
     "permissions": ["http://*.google.com.tw/", "https://*.google.com.tw/", "tabs", "activeTab", "declarativeContent", "storage", "webNavigation", "management"],
