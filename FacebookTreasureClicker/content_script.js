@@ -1,12 +1,16 @@
 var interval_id;
 var treasure_clicked;
+var click_btn_class = "";
+var close_btn_class = "";
 
 function init(){
     chrome.storage.sync.set({status: "ok"}, function() {
         console.log("[FacebookTreasureClicker] FacebookTreasureClicker Start Success");
     });
     chrome.storage.sync.set({treasure: []}, function() {});
-    chrome.storage.sync.get(['scanFreq'], function(items) {
+    chrome.storage.sync.get(['scanFreq', 'defaultClickBtnClass', 'defaultCloseBtnClass', 'clickBtnClass', 'closeBtnClass'], function(items) {
+        click_btn_class = (items.clickBtnClass && items.clickBtnClass.length > 0) ? items.clickBtnClass : items.defaultClickBtnClass;
+        close_btn_class = (items.closeBtnClass && items.closeBtnClass.length > 0) ? items.closeBtnClass : items.defaultCloseBtnClass;
         console.log("[FacebookTreasureClicker] Scan period : "+items.scanFreq+" second"+((items.scanFreq!=1)?"s":""));
         scanRun(items.scanFreq);
     });
@@ -22,8 +26,8 @@ function scanRun(freq)
 }
 
 function checkTreasureExist(){
-    var click_btn = document.getElementsByClassName("oajrlxb2 s1i5eluu gcieejh5 bn081pho humdl8nn izx4hr6d rq0escxv nhd2j8a9 j83agx80 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys d1544ag0 qt6c0cv9 tw6a2znq i1ao9s8h esuyzwwr f1sip0of lzcic4wl l9j0dhe7 abiwlrkh p8dawk7l beltcj47 p86d2i9g aot14ch1 kzx2olss cbu4d94t taijpn5t ni8dbmo4 stjgntxs k4urcfbm qypqp5cg");
-    var close_btn = document.getElementsByClassName("oajrlxb2 s1i5eluu gcieejh5 bn081pho humdl8nn izx4hr6d rq0escxv nhd2j8a9 j83agx80 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys d1544ag0 qt6c0cv9 tw6a2znq i1ao9s8h esuyzwwr f1sip0of lzcic4wl l9j0dhe7 abiwlrkh p8dawk7l beltcj47 p86d2i9g aot14ch1 kzx2olss cbu4d94t taijpn5t ni8dbmo4 stjgntxs k4urcfbm qypqp5cg");
+    var click_btn = document.getElementsByClassName(click_btn_class);
+    var close_btn = document.getElementsByClassName(close_btn_class);
     
     var prize_tag = document.getElementsByClassName("d2edcug0 hpfvmrgz qv66sw1b c1et5uql rrkovp55 a8c37x1j keod5gw0 nxhoafnm aigsh9s9 d3f4x2em fe6kdd0r mau55g9w c8b282yb mdeji52x a5q79mjw g1cxx5fr ekzkrbhg oo9gr5id hzawbc8m");
     
