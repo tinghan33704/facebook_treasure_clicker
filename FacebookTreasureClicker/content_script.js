@@ -29,7 +29,7 @@ function checkTreasureExist(){
     var click_btn = document.getElementsByClassName(click_btn_class);
     var close_btn = document.getElementsByClassName(close_btn_class);
     
-    var prize_tag = document.getElementsByClassName("d2edcug0 hpfvmrgz qv66sw1b c1et5uql rrkovp55 a8c37x1j keod5gw0 nxhoafnm aigsh9s9 d3f4x2em fe6kdd0r mau55g9w c8b282yb mdeji52x a5q79mjw g1cxx5fr ekzkrbhg oo9gr5id hzawbc8m");
+    var prize_tag = document.getElementsByClassName("d2edcug0 hpfvmrgz qv66sw1b c1et5uql lr9zc1uh a8c37x1j keod5gw0 nxhoafnm aigsh9s9 d3f4x2em fe6kdd0r mau55g9w c8b282yb mdeji52x a5q79mjw g1cxx5fr ekzkrbhg oo9gr5id hzawbc8m");
     
     if(click_btn.length > 0 && !treasure_clicked)
     {
